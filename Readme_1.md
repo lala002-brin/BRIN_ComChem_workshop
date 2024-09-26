@@ -48,7 +48,7 @@ ls
 ```
 You should see a list of your uploaded files.
 
-![alt text] (https://raw.githubusercontent.com/lala002-brin/BRIN_ComChem_workshop/refs/heads/main/_Virtual%20Background%20(9)%20(1).jpg)
+![alt text] (./_Virtual Background (9) (1).jpg?raw=true "xxx")
 
 ## Submitting the Job
 To submit a job for execution on the HPC (High-Performance Computing) cluster, use the sbatch command followed by the script name. In this case, the script is named `Yasara_MD.sh`. This script contains the instructions for the HPC to run the molecular dynamics simulation.
