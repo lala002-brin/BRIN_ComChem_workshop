@@ -83,7 +83,7 @@ Step-by-Step Guide to Edit Using vi
 ```
 vi Yasara_MD.sh
 ```
-2. Enter Insert Mode Press i to start editing the file.
+2. Enter Insert Mode Press `i` to start editing the file.
 ```
 #!/bin/bash
   
