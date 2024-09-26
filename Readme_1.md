@@ -111,10 +111,6 @@ into
 4. Save and Exit
 Press `Esc` to exit editing mode.
 Type `:wq` and press Enter to save and quit vi.
-`
-Make sure to include the following line in your job script:
-`yasara -txt md_analyze.mcr`
-This will run the analysis using the specified macro.
 
 ## Closing the Terminal
 Even though the job may take some time to complete, you can safely close the terminal. The job will continue running in the background on the HPC system until it's finished. You can always reconnect later and check the status using the `squeue` command again.
