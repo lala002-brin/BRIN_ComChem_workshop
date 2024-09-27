@@ -48,7 +48,7 @@ ls
 ```
 You should see a list of your uploaded files.
 
-![Screenshot 2024-09-02 at xx](XX.jpg)
+![Screenshot 2024-09-02 at xx](YASARA.jpg)
 
 ## Submitting the Job
 To submit a job for execution on the HPC (High-Performance Computing) cluster, use the sbatch command followed by the script name. In this case, the script is named `Yasara_MD.sh`. This script contains the instructions for the HPC to run the molecular dynamics simulation.
