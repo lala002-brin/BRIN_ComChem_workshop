@@ -48,7 +48,7 @@ ls
 ```
 You should see a list of your uploaded files.
 
-![alt text] (https://github-production-user-asset-6210df.s3.amazonaws.com/30887367/363686510-34d7d746-c80a-43c2-8bd5-8b0de5d2a346.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240926%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240926T125106Z&X-Amz-Expires=300&X-Amz-Signature=172c9c13f75a0c94f2e73e8638e649a83466c3d166a0c4f2810730031f68252c&X-Amz-SignedHeaders=host)
+![Screenshot 2024-09-02 at 15 31 39](https://github.com/user-attachments/assets/50cb41e1-76b5-4785-b45d-3ff9fc9ce614)
 
 ## Submitting the Job
 To submit a job for execution on the HPC (High-Performance Computing) cluster, use the sbatch command followed by the script name. In this case, the script is named `Yasara_MD.sh`. This script contains the instructions for the HPC to run the molecular dynamics simulation.
