@@ -38,6 +38,7 @@ type:
 The system will not display characters as you type, but simply press `Enter` after typing.
 
 After completing these steps, you should be successfully connected to the `trembesi02` login node of the HPC BRIN system.
+![Screenshot 2024-09-02 at xx](LoginHPC.jpeg)
 
 ## Creating a New Working Directory
 To keep your files organized, create a directory named `workshop_yasara` under your home directory by typing the following command:
