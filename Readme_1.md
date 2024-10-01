@@ -5,6 +5,11 @@ This guide demonstrates how to analyze molecular dynamics data using the MAHAMER
 ## Login to MAHAMERU
 ### Make sure you have the private key file (`id_ws000i`)
 Ensure that you have the private key file `id_ws000i` saved in a specific folder or directory on your system. You will need this file for authentication.
+- Linux/MacOS: Press `Ctrl + Alt + T` to open your terminal or search for "Terminal" in your applications.
+- Windows: Open PowerShell by typing "PowerShell" in the Start Menu.
+
+### Locate your private key (`id_ws000i`)
+
 
 ### Open the terminal or PowerShell
 
