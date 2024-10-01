@@ -114,7 +114,8 @@ Explanation of the Script:
 - `FILE_INPUT=md_analyze.mcr`: Defines the input file for the molecular dynamics simulation.
 - `yasara -txt ${FILE_INPUT}`: Runs the Yasara program in text mode using the input file md_analyze.mcr.
 
-To submit this job to the HPC scheduler (SLURM), run the following command in your terminal:
+
+Then, to submit this job to the HPC scheduler (SLURM), run the following command in your terminal:
 ```
 sbatch Yasara_MD.sh
 ```
@@ -139,11 +140,11 @@ Explanation:
 ## Interpreting the Job Status
 Once you run the squeue command, you'll see a list of jobs along with their details. The important column to note is the "ST" column, which represents the status of your job. 
 Here are common job statuses:
-- **R**: The job is Running.
-- **PD**: The job is Pending, meaning it's in the queue and waiting for resources.
-- **CG**: The job is Completing, meaning it is finishing up.
+- `**R**`: The job is Running.
+- `**PD**`: The job is Pending, meaning it's in the queue and waiting for resources.
+- `**CG**`: The job is Completing, meaning it is finishing up.
 
-If everything is working correctly, the status (**ST**) should display as '**R**', indicating that your job is actively running on the cluster.
+If everything is working correctly, the status (`**ST**`) should display as `**R**`, indicating that your job is actively running on the cluster.
 
 ## Monitoring Output in Real-Time
 To check the real-time progress of your job, you can use the tail -f command to monitor your output file. For example, if your job is running a molecular dynamics simulation and writing output to a file called md_runmembrane.mcr, you can view the live updates with this command:
