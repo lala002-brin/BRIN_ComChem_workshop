@@ -102,10 +102,11 @@ Explanation:
 - `wsbrinapctp0i` automatically fetches your username, so it shows the jobs associated with your account.
 
 ## Interpreting the Job Status
-Once you run the squeue command, you'll see a list of jobs along with their details. The important column to note is the "ST" column, which represents the status of your job. Here are common job statuses:
-**R**: The job is Running.
-**PD**: The job is Pending, meaning it's in the queue and waiting for resources.
-**CG**: The job is Completing, meaning it is finishing up.
+Once you run the squeue command, you'll see a list of jobs along with their details. The important column to note is the "ST" column, which represents the status of your job. 
+Here are common job statuses:
+- **R**: The job is Running.
+- **PD**: The job is Pending, meaning it's in the queue and waiting for resources.
+- **CG**: The job is Completing, meaning it is finishing up.
 
 If everything is working correctly, the status (**ST**) should display as '**R**', indicating that your job is actively running on the cluster.
 
