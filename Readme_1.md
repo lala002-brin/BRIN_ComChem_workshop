@@ -60,6 +60,7 @@ pwd
 This will show the current location in the directory structure, helping you confirm that you are now inside the `workshop_yasara` folder.
 
 For example, if everything is correct, you will see output similar to this:
+
 `/mgpfs/home/wsbrinapctp0i/workshop_yasara`
 
 ## Sending Your Preparation Job from Your Laptop
