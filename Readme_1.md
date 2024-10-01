@@ -11,8 +11,8 @@ Ensure that you have the private key file `id_ws000i` saved in a specific folder
 #### Locate your private key (`id_ws000i`)
 Find the directory where you saved your private key file (`id_ws000i`). For example:
 
-- If the key file is saved in the `.ssh` directory on Linux/MacOS, the path might look like `/home/your-username/.ssh/id_ws000i`.
-- On Windows, it might be something like `C:\Users\your-username\.ssh\id_ws000i`.
+- If the key file is saved in the `Downloads` directory on Linux/MacOS, the path might look like `/home/your-username/Downloads/id_ws000i`.
+- On Windows, it might be something like `C:\Users\your-username\Downloads\id_ws000i`.
 
 #### Use the ssh command with the correct path
 Now, using your terminal (or PowerShell), type the following command to initiate the SSH connection:
@@ -20,13 +20,13 @@ Now, using your terminal (or PowerShell), type the following command to initiate
 ssh wsbrinapctp0i@login2.hpc.brin.go.id -i /full/path/to/id_ws000i
 ```
 Example
-If the `id_ws000i` file is stored in `/home/username/.ssh/id_ws000i` on a Linux/MacOS system, the command will look like:
+If the `id_ws000i` file is stored in `/home/username/Downloads/id_ws000i` on a Linux/MacOS system, the command will look like:
 ```
-ssh wsbrinapctp0i@login2.hpc.brin.go.id -i /home/username/.ssh/id_ws000i
+ssh wsbrinapctp0i@login2.hpc.brin.go.id -i /home/username/Downloads/id_ws000i
 ```
-For a Windows system, if the file is in `C:\Users\username\.ssh\id_ws000i`, the command will be:
+For a Windows system, if the file is in `C:\Users\username\Downloads\id_ws000i`, the command will be:
 ```
-ssh wsbrinapctp0i@login2.hpc.brin.go.id -i C:\Users\username\.ssh\id_ws000i
+ssh wsbrinapctp0i@login2.hpc.brin.go.id -i C:\Users\username\Downloads\id_ws000i
 ```
 
 If this is your first time connecting to `login2.hpc.brin.go.id`, you'll be asked to confirm the host identity. Type `yes` to continue.
