@@ -203,7 +203,12 @@ sbatch Yasara_analysis.sh
 ```
 This will submit the analysis job to the HPC, and the system will allocate the necessary resources. The results of the analysis will be saved in `analysis.out`, and any errors will be logged in `analysis.err`.
 
-You should see a list of result analysis files.
+To confirm that the analysis has completed successfully and view the results, you can list the files in your directory:
+```
+ls
+```
+
+You should see a list of files:
 
 ![Screenshot 2024-09-02 at xx](analysis.png)
 
@@ -212,5 +217,13 @@ You should see a list of result analysis files.
 Even though the job may take some time to complete, you can safely close the terminal. The job will continue running in the background on the HPC system until it's finished. You can always reconnect later and check the status using the `squeue` command again.
 
 By using `sbatch`, the job is handled by the scheduler independently of your terminal session, so there's no need to keep the terminal open while the job runs.
+
+To download the result files from the HPC to your laptop, you can use the `scp` command. Here's how to do it:
+
+**Download the Result Files to Your Laptop**: Use the following command on your laptop to download the analysis.out and analysis.err files from the HPC to your local machine:
+```
+scp wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/workshop_yasara/analysis.out ~/Downloads/.
+scp wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/workshop_yasara/analysis.err ~/Downloads/.
+```
 
 
