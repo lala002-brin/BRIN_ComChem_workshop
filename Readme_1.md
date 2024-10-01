@@ -84,11 +84,46 @@ You should see a list of your uploaded files.
 ![Screenshot 2024-09-02 at xx](YASARA.jpg)
 
 ## Submitting the Job
-To submit a job for execution on the HPC (High-Performance Computing) cluster, use the sbatch command followed by the script name. In this case, the script is named `Yasara_MD.sh`. This script contains the instructions for the HPC to run the molecular dynamics simulation.
+To submit a job for execution on the HPC cluster, use the sbatch command followed by the script name. In this example, the script is called Yasara_MD.sh, which contains the necessary instructions for running the molecular dynamics simulation.
+
+#### Yasara_MD.sh Script Contents
+```
+#!/bin/bash
+
+#SBATCH --nodes=1              # Request 1 node
+#SBATCH --ntasks=4             # Request 4 CPU cores
+#SBATCH --mem=16GB             # Request 16 GB of memory
+#SBATCH --partition=medium-large  # Specify the partition to use
+
+#SBATCH --output=md_analyze.out  # Save standard output to md_analyze.out
+#SBATCH --error=md_analyze.err   # Save error messages to md_analyze.err
+
+FILE_INPUT=md_analyze.mcr  # Define the input file for the simulation
+
+yasara -txt ${FILE_INPUT}  # Run Yasara using the specified input file
+```
+
+Explanation of the Script:
+- `#!/bin/bash`: This line specifies the script will be executed in a Bash shell.
+- `#SBATCH --nodes=1`: Allocates 1 compute node for the job.
+- `#SBATCH --ntasks=4`: Requests 4 tasks (or CPU cores) for parallel execution.
+- `#SBATCH --mem=16GB`: Allocates 16 GB of memory to the job.
+- `#SBATCH --partition=medium-large`: Specifies the partition (queue) to submit the job to, in this case, a medium-large queue suitable for moderately resource-intensive tasks.
+- `#SBATCH --output=md_analyze.out`: Redirects the standard output to the md_analyze.out file.
+- `#SBATCH --error=md_analyze.err`: Redirects error messages to the md_analyze.err file for debugging.
+- `FILE_INPUT=md_analyze.mcr`: Defines the input file for the molecular dynamics simulation.
+- `yasara -txt ${FILE_INPUT}`: Runs the Yasara program in text mode using the input file md_analyze.mcr.
+
+To submit this job to the HPC scheduler (SLURM), run the following command in your terminal:
 ```
 sbatch Yasara_MD.sh
 ```
-When you run this command, the job is submitted to the scheduler (SLURM), which queues your task and assigns the necessary computational resources (CPUs, memory, etc.) to execute it.
+#### What Happens When You Submit:
+- The `sbatch` command submits the job to SLURM, the job scheduling system used by the HPC.
+- The scheduler then queues your job and assigns it the required resources (CPU, memory, etc.) once available.
+- The simulation will run, with its output saved in `md_analyze.out` and any errors captured in `md_analyze.err`.
+- This process ensures that your molecular dynamics simulation runs efficiently on the HPC cluster.
+
 
 ## Checking Job Status
 After submitting your job, you can monitor its progress using the `squeue` command. This command allows you to view the status of jobs currently in the queue.
@@ -109,6 +144,17 @@ Here are common job statuses:
 - **CG**: The job is Completing, meaning it is finishing up.
 
 If everything is working correctly, the status (**ST**) should display as '**R**', indicating that your job is actively running on the cluster.
+
+## Monitoring Output in Real-Time
+To check the real-time progress of your job, you can use the tail -f command to monitor your output file. For example, if your job is running a molecular dynamics simulation and writing output to a file called md_runmembrane.mcr, you can view the live updates with this command:
+```
+tail -f md_runmembrane.mcr
+```
+Explanation:
+- `tail -f` continuously displays the last few lines of the file, and it updates in real-time as new lines are added.
+- `md_runmembrane.mcr` is the name of the output file where the progress of your job is being logged.
+
+This allows you to track the progress of your job without waiting for it to finish.
 
 ## Analysing MD results
 After the simulation is completed, you can analyze the molecular dynamics results. To do so, modify your Yasara_MD.sh script to use md_analyze.mcr as the input for the analysis.
