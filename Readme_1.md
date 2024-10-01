@@ -205,7 +205,7 @@ This will submit the analysis job to the HPC, and the system will allocate the n
 
 You should see a list of result analysis files.
 
-![Screenshot 2024-09-02 at xx](YASARA.jpg)
+![Screenshot 2024-09-02 at xx](analysis.png)
 
 
 ## Closing the Terminal
