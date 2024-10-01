@@ -66,11 +66,13 @@ Here:
 - `login2.hpc.brin.go.id` is the remote host.
 - `/home/wsbrinapctp0i/workshop_yasara/` is the destination folder on the remote server.
 
-Alternatively, if you want to copy multiple files:
+Alternatively, if you want to copy a folder, make sure that the "workshop_yasara" directory exists on the HPC. If it hasn’t been created yet, you can create the directory while copying the folder using this command:
+
 ```
-scp -rp workshop_yasara * wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/
+scp -rp workshop_yasara wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/
 ```
-After running the command, Once authenticated, the files will be transferred to the `workshop_yasara` directory.
+Once the command is executed and you’ve authenticated, the folder `workshop_yasara` and its contents will be transferred to the specified directory on the HPC.
+
 
 ## Verifying File Upload
 Back on the terminal connected to the HPC, verify that the files have been uploaded successfully by listing the contents of the current directory, type:
