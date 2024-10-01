@@ -8,16 +8,36 @@ Ensure that you have the private key file `id_ws000i` saved in a specific folder
 - Linux/MacOS: Press `Ctrl + Alt + T` to open your terminal or search for "Terminal" in your applications.
 - Windows: Open PowerShell by typing "PowerShell" in the Start Menu.
 
-### Locate your private key (`id_ws000i`)
+#### Locate your private key (`id_ws000i`)
+Find the directory where you saved your private key file (`id_ws000i`). For example:
 
+- If the key file is saved in the `.ssh` directory on Linux/MacOS, the path might look like `/home/your-username/.ssh/id_ws000i`.
+- On Windows, it might be something like `C:\Users\your-username\.ssh\id_ws000i`.
 
-### Open the terminal or PowerShell
-
-Open your terminal (Linux, MacOS) or PowerShell (Windows) and enter the following commands
+#### Use the ssh command with the correct path
+Now, using your terminal (or PowerShell), type the following command to initiate the SSH connection:
 ```
-ssh username@login2.hpc.brin.go.id
+ssh wsbrinapctp0i@login2.hpc.brin.go.id -i /full/path/to/id_ws000i
 ```
-You will be connected to the `trembesi02` node, which serves as a **login** node.
+Example
+If the `id_ws000i` file is stored in `/home/username/.ssh/id_ws000i` on a Linux/MacOS system, the command will look like:
+```
+ssh wsbrinapctp0i@login2.hpc.brin.go.id -i /home/username/.ssh/id_ws000i
+```
+For a Windows system, if the file is in `C:\Users\username\.ssh\id_ws000i`, the command will be:
+```
+ssh wsbrinapctp0i@login2.hpc.brin.go.id -i C:\Users\username\.ssh\id_ws000i
+```
+
+If this is your first time connecting to `login2.hpc.brin.go.id`, you'll be asked to confirm the host identity. Type `yes` to continue.
+If your private key (`id_ws000i`) is encrypted, you'll be prompted to enter the passphrase associated with the key.
+type:
+
+`brinapctp` as the passphrase.
+
+The system will not display characters as you type, but simply press `Enter` after typing.
+
+After completing these steps, you should be successfully connected to the `trembesi02` login node of the HPC BRIN system.
 
 ## Creating a New Working Directory
 To keep your files organized, create a directory named `workshop_yasara` under your home directory by typing the following command:
