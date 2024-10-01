@@ -188,6 +188,13 @@ yasara -txt ${FILE_ANALYSIS}     # Run Yasara in text mode for analysis
 
 ```
 
+To execute the `Yasara_analysis.sh` script and analyze the results, use the following command:
+```
+sbatch Yasara_analysis.sh
+```
+This will submit the analysis job to the HPC, and the system will allocate the necessary resources. The results of the analysis will be saved in `analysis.out`, and any errors will be logged in `analysis.err`.
+
+
 ## Closing the Terminal
 Even though the job may take some time to complete, you can safely close the terminal. The job will continue running in the background on the HPC system until it's finished. You can always reconnect later and check the status using the `squeue` command again.
 
