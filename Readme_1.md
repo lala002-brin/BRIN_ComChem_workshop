@@ -168,41 +168,25 @@ Explanation:
 This allows you to track the progress of your job without waiting for it to finish.
 
 ## Analysing MD results
-After the simulation is completed, you can analyze the molecular dynamics results. To do so, modify your Yasara_MD.sh script to use md_analyze.mcr as the input for the analysis.
+After the simulation is completed, you can analyze the molecular dynamics results. To do so, use the `Yasara_analysis.sh` script, which is specifically designed to process and analyze the output from your simulation.
 
-Step-by-Step Guide to Edit Using vi
-1. Open the File In the terminal, type:
-```
-vi Yasara_MD.sh
-```
-2. Enter Insert Mode Press `i` to start editing the file.
+#### Yasara_analysis.sh Script Contents
 ```
 #!/bin/bash
-  
-#SBATCH --nodes=1
-#SBATCH --ntasks=64
-#SBATCH --mem=32GB
-#SBATCH --partition=medium-large
 
-#SBATCH --output=md_runmembrane.out
-#SBATCH --error=md_runmembrane.err
+#SBATCH --nodes=1               # Request 1 node
+#SBATCH --ntasks=4              # Request 4 CPU cores
+#SBATCH --mem=8GB               # Request 8 GB of memory
+#SBATCH --partition=medium       # Use a medium partition for analysis
 
-yasara_exec=/mgpfs/home/lala002/apps/yasara/yasara
+#SBATCH --output=analysis.out    # Save standard output to analysis.out
+#SBATCH --error=analysis.err     # Save error messages to analysis.err
 
-FILE_INPUT=md_runmembrane.mcr
+FILE_ANALYSIS=md_analyze.mcr     # Define the input file for analysis
 
-nice -n 20 ${yasara_exec} -txt ${FILE_INPUT}
+yasara -txt ${FILE_ANALYSIS}     # Run Yasara in text mode for analysis
 
 ```
-
-Edit the File Add the line:
-`md_runmembrane`
-into
-`md_analyze`
-
-4. Save and Exit
-Press `Esc` to exit editing mode.
-Type `:wq` and press Enter to save and quit vi.
 
 ## Closing the Terminal
 Even though the job may take some time to complete, you can safely close the terminal. The job will continue running in the background on the HPC system until it's finished. You can always reconnect later and check the status using the `squeue` command again.
