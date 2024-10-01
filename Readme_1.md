@@ -51,7 +51,16 @@ To navigate to the newly created `workshop_yasara` directory, type:
 ```
 cd workshop_yasara
 ```
-Press Enter.
+Press `Enter` to confirm.
+
+To ensure you are in the correct directory, use the `pwd` (print working directory) command, which will display the full path of your current directory:
+```
+pwd
+```
+This will show the current location in the directory structure, helping you confirm that you are now inside the `workshop_yasara` folder.
+
+For example, if everything is correct, you will see output similar to this:
+`/mgpfs/home/wsbrinapctp0i/workshop_yasara`
 
 ## Sending Your Preparation Job from Your Laptop
 To send files from your laptop to the remote directory using SCP (Secure Copy Protocol), type the following command (in your laptop):
