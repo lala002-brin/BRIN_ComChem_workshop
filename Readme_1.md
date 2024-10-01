@@ -1,24 +1,27 @@
 # HPC Summer School 2024: Foundation in Computational Biomolecular and Biosystem Research
 
-This guide demonstrates how to analyze molecular dynamics data using the MAHAMERU BRIN HPC. In this workshop, all necessary software is pre-installed as modules, including ORCA (for quantum chemistry calculations), while Yasara Structure (licensed) is already set up on local computers. Therefore, no additional environment setup is required. To run the examples, simply click the top-right corner of each code box to copy the provided snippets, and paste them directly into your terminal.
+Welcome to the HPC Summer School! This guide will walk you through the process of analyzing molecular dynamics (MD) data using the MAHAMERU BRIN HPC system. The necessary software, such as Yasara structure and ORCA for quantum chemistry calculations, is pre-installed as modules. No additional environment setup is required. You’re ready to go!
+
+Simply click the top-right corner of each code snippet to copy the commands and paste them directly into your terminal.
 
 ## Login to MAHAMERU
-#### Make sure you have the private key file (`id_ws000i`)
-Ensure that you have the private key file `id_ws000i` saved in a specific folder or directory on your system. You will need this file for authentication.
-- Linux/MacOS: Press `Ctrl + Alt + T` to open your terminal or search for "Terminal" in your applications.
-- Windows: Open PowerShell by typing "PowerShell" in the Start Menu.
+To start, ensure you have your private key file (`id_ws000i`) handy. This file is essential for authenticating your login to the HPC system.
 
-#### Locate your private key (`id_ws000i`)
-Find the directory where you saved your private key file (`id_ws000i`). For example:
+Steps:
+1. Open Terminal:
+    - Linux/MacOS: Press `Ctrl + Alt + T` to open your terminal or search for "Terminal" in your applications.
+    - Windows: Open PowerShell by typing "PowerShell" in the Start Menu.
+      
+2. Locate Your Private Key:
+   Find the directory where you saved your private key file (`id_ws000i`). For example:
 
-- If the key file is saved in the `Downloads` directory on Linux/MacOS, the path might look like `/home/your-username/Downloads/id_ws000i`.
-- On Windows, it might be something like `C:\Users\your-username\Downloads\id_ws000i`.
-
-#### Use the ssh command with the correct path
-Now, using your terminal (or PowerShell), type the following command to initiate the SSH connection:
+    - If the key file is saved in the `Downloads` directory on Linux/MacOS, the path might look like `/home/your-username/Downloads/id_ws000i`.
+    - On Windows, it might be something like `C:\Users\your-username\Downloads\id_ws000i`.
+      
+3. Connect to the HPC: Run the `SSH` command with the correct path to your private key:
 ```
 ssh wsbrinapctp0i@login2.hpc.brin.go.id -i /full/path/to/id_ws000i
-```
+``` 
 Example
 If the `id_ws000i` file is stored in `/home/username/Downloads/id_ws000i` on a Linux/MacOS system, the command will look like:
 ```
@@ -29,6 +32,7 @@ For a Windows system, if the file is in `C:\Users\username\Downloads\id_ws000i`,
 ssh wsbrinapctp0i@login2.hpc.brin.go.id -i C:\Users\username\Downloads\id_ws000i
 ```
 
+4. Authenticate:
 If this is your first time connecting to `login2.hpc.brin.go.id`, you'll be asked to confirm the host identity. Type `yes` to continue.
 If your private key (`id_ws000i`) is encrypted, you'll be prompted to enter the passphrase associated with the key.
 type:
