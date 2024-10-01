@@ -68,29 +68,31 @@ Now, let's create a dedicated directory for your workshop files to stay organize
 
     `/mgpfs/home/wsbrinapctp0i/workshop_yasara`
 
+ Now, you're ready to start working within your new workshop_yasara folder.
  
-## Sending Your Preparation Job from Your Laptop
-To send files from your laptop to the remote directory using SCP (Secure Copy Protocol), type the following command (in your laptop):
-```
-scp ~/Downloads/id_ws000i wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/workshop_yasara/
+## Sending Files to the HPC
+To upload files from your laptop to the HPC system, use SCP (Secure Copy Protocol). This example shows how to upload your private key file:
 
-```
-Here:
+1. **Send a File**: To send files from your laptop to the remote directory using SCP, type the following command (in your laptop):
+    ```
+    scp ~/Downloads/id_ws000i wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/workshop_yasara/
 
-- `~/Downloads/id_ws000i` is the location of your private key file in the Downloads directory.
-- `wsbrinapctp0i` is your remote username.
-- `login2.hpc.brin.go.id` is the remote host.
-- `/home/wsbrinapctp0i/workshop_yasara/` is the destination folder on the remote server.
+    ```
+    Here:
 
-Alternatively, if you want to copy a folder, make sure that the "workshop_yasara" directory exists on the HPC. If it hasn’t been created yet, you can create the directory while copying the folder using this command:
+    - `~/Downloads/id_ws000i` is the location of your private key file in the Downloads directory.
+    - `wsbrinapctp0i` is your remote username.
+    - `login2.hpc.brin.go.id` is the remote host.
+    - `/home/wsbrinapctp0i/workshop_yasara/` is the destination folder on the remote server.
 
-```
-scp -rp workshop_yasara wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/
-```
-Once the command is executed and you’ve authenticated, the folder `workshop_yasara` and its contents will be transferred to the specified directory on the HPC.
+or, alternatively:
+    
+2. **Upload a Folder**: if you want to copy a folder, make sure that the "workshop_yasara" directory exists on the HPC. If it hasn’t been created yet, you can create the directory while copying the folder using this command:
 
+    ```
+    scp -rp workshop_yasara wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/
+    ```
 
-## Verifying File Upload
 Back on the terminal connected to the HPC, verify that the files have been uploaded successfully by listing the contents of the current directory, type:
 ```
 ls
@@ -98,6 +100,7 @@ ls
 You should see a list of your uploaded files.
 
 ![Screenshot 2024-09-02 at xx](YASARA.jpg)
+
 
 ## Submitting the Job
 To submit a job for execution on the HPC cluster, use the sbatch command followed by the script name. In this example, the script is called Yasara_MD.sh, which contains the necessary instructions for running the molecular dynamics simulation.
