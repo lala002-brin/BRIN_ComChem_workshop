@@ -19,29 +19,29 @@ Steps:
     - On Windows, it might be something like `C:\Users\your-username\Downloads\id_ws000i`.
       
 3. Connect to the HPC: Run the `SSH` command with the correct path to your private key:
-```
-ssh wsbrinapctp0i@login2.hpc.brin.go.id -i /full/path/to/id_ws000i
-``` 
-Example
-If the `id_ws000i` file is stored in `/home/username/Downloads/id_ws000i` on a Linux/MacOS system, the command will look like:
-```
-ssh wsbrinapctp0i@login2.hpc.brin.go.id -i /home/username/Downloads/id_ws000i
-```
-For a Windows system, if the file is in `C:\Users\username\Downloads\id_ws000i`, the command will be:
-```
-ssh wsbrinapctp0i@login2.hpc.brin.go.id -i C:\Users\username\Downloads\id_ws000i
-```
+    ```
+    ssh wsbrinapctp0i@login2.hpc.brin.go.id -i /full/path/to/id_ws000i
+    ``` 
+    Example
+    If the `id_ws000i` file is stored in `/home/username/Downloads/id_ws000i` on a Linux/MacOS system, the command will look like:
+    ```
+    ssh wsbrinapctp0i@login2.hpc.brin.go.id -i /home/username/Downloads/id_ws000i
+    ```
+    For a Windows system, if the file is in `C:\Users\username\Downloads\id_ws000i`, the command will be:
+    ```
+    ssh wsbrinapctp0i@login2.hpc.brin.go.id -i C:\Users\username\Downloads\id_ws000i
+    ```
 
 4. Authenticate:
-If this is your first time connecting to `login2.hpc.brin.go.id`, you'll be asked to confirm the host identity. Type `yes` to continue.
-If your private key (`id_ws000i`) is encrypted, you'll be prompted to enter the passphrase associated with the key.
-type:
+    If this is your first time connecting to `login2.hpc.brin.go.id`, you'll be asked to confirm the host identity. Type `yes` to continue.
+    If your private key (`id_ws000i`) is encrypted, you'll be prompted to enter the passphrase associated with the key.
+    type:
 
-`brinapctp` as the passphrase.
+    `brinapctp` as the passphrase.
 
-The system will not display characters as you type, but simply press `Enter` after typing.
+    The system will not display characters as you type, but simply press `Enter` after typing.
 
-After completing these steps, you should be successfully connected to the `trembesi02` login node of the HPC BRIN system.
+    After completing these steps, you should be successfully connected to the `trembesi02` login node of the HPC BRIN system.
 
 ![Screenshot 2024-09-02 at xx](LoginHPC.jpeg)
 
