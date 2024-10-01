@@ -147,7 +147,7 @@ Here are common job statuses:
 If everything is working correctly, the status (`ST`) should display as `R`, indicating that your job is actively running on the cluster.
 
 ## Monitoring Output in Real-Time
-To check the real-time progress of your job, you can use the tail -f command to monitor your output file. For example, if your job is running a molecular dynamics simulation and writing output to a file called md_runmembrane.mcr, you can view the live updates with this command:
+To check the real-time progress of your job, you can use the `tail -f` command to monitor your output file. For example, if your job is running a molecular dynamics simulation and writing output to a file called `md_runmembrane.mcr`, you can view the live updates with this command:
 ```
 tail -f md_runmembrane.mcr
 ```
