@@ -47,26 +47,28 @@ Steps:
 
 
 ## Creating a New Working Directory
-To keep your files organized, create a directory named `workshop_yasara` under your home directory by typing the following command:
-```
-mkdir workshop_yasara
-```
-To navigate to the newly created `workshop_yasara` directory, type:
-```
-cd workshop_yasara
-```
-Press `Enter` to confirm.
+Now, let's create a dedicated directory for your workshop files to stay organized:
+1. **Create the Directory**: To keep your files organized, create a directory named `workshop_yasara` under your home directory by typing the following command:
+     ```
+    mkdir workshop_yasara
+    ```
 
-To ensure you are in the correct directory, use the `pwd` (print working directory) command, which will display the full path of your current directory:
-```
-pwd
-```
-This will show the current location in the directory structure, helping you confirm that you are now inside the `workshop_yasara` folder.
+2. **Navigate to the Directory**:
+    ```
+    cd workshop_yasara
+    ```
 
-For example, if everything is correct, you will see output similar to this:
+3. **Confirm Your Location**: To ensure you are in the correct directory, use the `pwd` (print working directory) command, which will display the full path of your current directory:
+    ```
+    pwd
+    ```
+    This will show the current location in the directory structure, helping you confirm that you are now inside the `workshop_yasara` folder.
 
-`/mgpfs/home/wsbrinapctp0i/workshop_yasara`
+    For example, if everything is correct, you will see output similar to this:
 
+    `/mgpfs/home/wsbrinapctp0i/workshop_yasara`
+
+ 
 ## Sending Your Preparation Job from Your Laptop
 To send files from your laptop to the remote directory using SCP (Secure Copy Protocol), type the following command (in your laptop):
 ```
