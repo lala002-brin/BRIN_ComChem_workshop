@@ -203,6 +203,10 @@ sbatch Yasara_analysis.sh
 ```
 This will submit the analysis job to the HPC, and the system will allocate the necessary resources. The results of the analysis will be saved in `analysis.out`, and any errors will be logged in `analysis.err`.
 
+You should see a list of result analysis files.
+
+![Screenshot 2024-09-02 at xx](YASARA.jpg)
+
 
 ## Closing the Terminal
 Even though the job may take some time to complete, you can safely close the terminal. The job will continue running in the background on the HPC system until it's finished. You can always reconnect later and check the status using the `squeue` command again.
