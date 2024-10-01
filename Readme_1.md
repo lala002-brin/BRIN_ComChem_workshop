@@ -3,7 +3,7 @@
 This guide demonstrates how to analyze molecular dynamics data using the MAHAMERU BRIN HPC. In this workshop, all necessary software is pre-installed as modules, including ORCA (for quantum chemistry calculations), while Yasara Structure (licensed) is already set up on local computers. Therefore, no additional environment setup is required. To run the examples, simply click the top-right corner of each code box to copy the provided snippets, and paste them directly into your terminal.
 
 ## Login to MAHAMERU
-### Make sure you have the private key file (`id_ws000i`)
+#### Make sure you have the private key file (`id_ws000i`)
 Ensure that you have the private key file `id_ws000i` saved in a specific folder or directory on your system. You will need this file for authentication.
 - Linux/MacOS: Press `Ctrl + Alt + T` to open your terminal or search for "Terminal" in your applications.
 - Windows: Open PowerShell by typing "PowerShell" in the Start Menu.
