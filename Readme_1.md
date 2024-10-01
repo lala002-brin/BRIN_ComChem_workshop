@@ -54,7 +54,7 @@ cd workshop_yasara
 Press Enter.
 
 ## Sending Your Preparation Job from Your Laptop
-To send files from your laptop to the remote directory using SCP (Secure Copy Protocol), type the following command:
+To send files from your laptop to the remote directory using SCP (Secure Copy Protocol), type the following command (in your laptop):
 ```
 scp ~/Downloads/id_ws000i wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/workshop_yasara/
 
@@ -93,12 +93,13 @@ When you run this command, the job is submitted to the scheduler (SLURM), which 
 ## Checking Job Status
 After submitting your job, you can monitor its progress using the `squeue` command. This command allows you to view the status of jobs currently in the queue.
 ```
-squeue -u whoami
+squeue -u wsbrinapctp0i
 ```
 Explanation:
 
-`squeue` is used to query the scheduler for jobs that are either waiting or running.
-`-u` specifies the user, and `whoami` automatically fetches your username, so it shows the jobs associated with your account.
+- `squeue` is used to query the scheduler for jobs that are either waiting or running.
+- `-u` specifies the user, and 
+- `wsbrinapctp0i` automatically fetches your username, so it shows the jobs associated with your account.
 
 ## Interpreting the Job Status
 Once you run the squeue command, you'll see a list of jobs along with their details. The important column to note is the "ST" column, which represents the status of your job. Here are common job statuses:
