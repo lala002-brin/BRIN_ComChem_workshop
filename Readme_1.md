@@ -56,21 +56,19 @@ Press Enter.
 ## Sending Your Preparation Job from Your Laptop
 To send files from your laptop to the remote directory using SCP (Secure Copy Protocol), type the following command:
 ```
-scp /path/to/your/file username@remote_host:/home/username/workshop_yasara/
+scp ~/Downloads/id_ws000i wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/workshop_yasara/
+
 ```
 Here:
 
-`/path/to/your/file` is the location of the file on your laptop.
-`username` is your remote machine's username.
-`remote_host` is the IP address or hostname of the remote machine.
+- `~/Downloads/id_ws000i` is the location of your private key file in the Downloads directory.
+- `wsbrinapctp0i` is your remote username.
+- `login2.hpc.brin.go.id` is the remote host.
+- `/home/wsbrinapctp0i/workshop_yasara/` is the destination folder on the remote server.
 
-For example, if your file is located at `/Documents/Yasara/testfile.txt` and your remote server’s username is user123, and the host is 192.168.1.5, the command would look like:
-```
-scp /Documents/Yasara/testfile.txt user123@192.168.1.5:/home/user123/workshop_yasara/
-```
 Alternatively, if you want to copy multiple files:
 ```
-scp -rp * fari025@login2.hpc.brin.go.id:/mgpfs/home/fari025/workshop_yasara
+scp -rp workshop_yasara * wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/
 ```
 After running the command, Once authenticated, the files will be transferred to the `workshop_yasara` directory.
 
