@@ -220,10 +220,11 @@ By using `sbatch`, the job is handled by the scheduler independently of your ter
 
 To download the result files from the HPC to your laptop, you can use the `scp` command. Here's how to do it:
 
-**Download the Result Files to Your Laptop**: Use the following command on your laptop to download the analysis.out and analysis.err files from the HPC to your local machine:
+**Download the Result Files to Your Laptop**: 
+
+Use the following command on your laptop to download the 4hjo_001_report.html files from the HPC to your local machine:
 ```
-scp wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/workshop_yasara/analysis.out ~/Downloads/.
-scp wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/workshop_yasara/analysis.err ~/Downloads/.
+scp wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/workshop_yasara/4hjo_001_report.html ~/Downloads/.
 ```
 
 
