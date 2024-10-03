@@ -16,15 +16,17 @@ Steps:
 
     - If the key file is saved in the `Downloads` directory on Linux/MacOS, the path might look like
     
-      `/home/your-username/Downloads/id_ws000i`.
+      `/home/your-username/Downloads/keybrinapctp0i`.
    
-    - On Windows, it might be something like `C:\Users\your-username\Downloads\id_ws000i`.
+    - On Windows, it might be something like
+    
+      `C:\Users\your-username\Downloads\keybrinapctp0i`.
       
    
 5. Connect to the HPC: Run the `SSH` command with the correct path to your private key:
    
     ```
-    ssh wsbrinapctp0i@login2.hpc.brin.go.id -i /full/path/to/id_ws000i
+    ssh wsbrinapctp0i@login2.hpc.brin.go.id -i /full/path/to/keybrinapctp0i
     ``` 
     Example
     If the `id_ws000i` file is stored in `/home/username/Downloads/keybrinapctp0i` on a Linux/MacOS system, the command will look like:
