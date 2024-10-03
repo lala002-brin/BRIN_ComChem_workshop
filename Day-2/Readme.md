@@ -104,7 +104,15 @@ or, alternatively:
     ```
     scp -rp -i ~/Downloads/keybrinapctp0i workshop_yasara wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/
     ```
-
+    Explanation:
+    - `scp`: This is a secure copy command used to transfer files between your local machine and a remote server (HPC).
+    - `r`: This option tells scp to copy the entire directory and its contents recursively.
+    - `p`: This option preserves the file modification times, access times, and modes from the original files.
+    - `i ~/Downloads/keybrinapctp0i`: This specifies the SSH private key to authenticate with the remote server (HPC).
+    workshop_yasara: This is the name of the local directory you want to upload to the HPC.
+    wsbrinapctp0i@login2.hpc.brin.go.id: This is the username and login address for the remote HPC server.
+    - `/mgpfs/home/wsbrinapctp0i/`: This is the destination path on the HPC where the directory will be copied. Make sure you adjust this path to        where you want the folder to be located.
+   
     Back on the terminal connected to the HPC, verify that the files have been uploaded successfully by listing the contents of the current         directory, type:
     ```
     ls
@@ -113,6 +121,9 @@ or, alternatively:
 
     ![Screenshot 2024-09-02 at xx](https://github.com/lala002-brin/BRIN_ComChem_workshop/blob/main/attachment/YASARA.jpg)
 
+or, alternatively, 
+
+git clone https://github.com/lala002-brin/BRIN_ComChem_workshop.git
 
 ## Submitting the Job
 To submit a job for execution on the HPC cluster, use the sbatch command followed by the script name. In this example, the script is called Yasara_MD.sh, which contains the necessary instructions for running the molecular dynamics simulation.
