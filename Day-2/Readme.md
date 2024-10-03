@@ -117,13 +117,15 @@ or, alternatively:
     ```
     ls
     ```
-    You should see a list of your uploaded files.
+    You should see the uploaded `workshop_yasara` folder listed along with its contents.
 
     ![Screenshot 2024-09-02 at xx](https://github.com/lala002-brin/BRIN_ComChem_workshop/blob/main/attachment/YASARA.jpg)
 
-or, alternatively, 
-
+**Alternative Method Using Git:**
+You can clone it directly to the HPC without manually uploading it. Use the following command to clone the repository:
+```
 git clone https://github.com/lala002-brin/BRIN_ComChem_workshop.git
+```
 
 ## Submitting the Job
 To submit a job for execution on the HPC cluster, use the sbatch command followed by the script name. In this example, the script is called Yasara_MD.sh, which contains the necessary instructions for running the molecular dynamics simulation.
