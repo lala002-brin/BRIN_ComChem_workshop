@@ -1,6 +1,8 @@
 #### 1.	Ensure a Terminal for SSH Connection is Available:
   a.	Windows: PowerShell
+  
   b.	Linux: Usually pre-installed by default
+  
   c.	Mac: Usually pre-installed by default
 
 #### 2.	YASARA Structure Installation:
