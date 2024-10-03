@@ -41,7 +41,7 @@ Steps:
     ```
     For a Windows system, if the file is in `C:\Users\username\Downloads\keybrinapctp0i`, the command will be:
     ```
-    ssh wsbrinapctp0i@login2.hpc.brin.go.id -i C:\Users\username\Downloads\keybrinapctp0i
+    ssh -i C:\Users\username\Downloads\keybrinapctp0i wsbrinapctp0i@login2.hpc.brin.go.id 
     ```
 
 6. Authenticate:
