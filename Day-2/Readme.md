@@ -12,7 +12,9 @@ Steps:
     - Windows: Open PowerShell by typing "PowerShell" in the Start Menu.
       
 2. Locate Your Private Key:
-   Find the directory where you saved your private key file (`keybrinapctp0i`). For example:
+   Find the directory where you saved your private key file (`keybrinapctp0i`).
+
+   For example:
 
     - If the key file is saved in the `Downloads` directory on Linux/MacOS, the path might look like
     
