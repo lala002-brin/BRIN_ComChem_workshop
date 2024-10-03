@@ -126,7 +126,17 @@ You can clone it directly to the HPC without manually uploading it. Use the foll
 ```
 git clone https://github.com/lala002-brin/BRIN_ComChem_workshop.git
 ```
-
+To copy the required file from the specified directory on the HPC to your current working directory, use the following command:
+```
+cp /mgpfs/home/wsbrinapctp0i/BRIN_ComChem_workshop/Day-2/input_file/* .
+```
+Explanation:
+- `cp`: This is the command used to copy files.
+- `/mgpfs/home/wsbrinapctp0i/BRIN_ComChem_workshop/Day-2/input_file/`: This is the source directory where the required files are located.
+- `*` : This wildcard symbol is used to select all files within the input_file directory. If you only need a specific file, replace * with the filename (e.g., input_file_name).
+- `.`: This refers to the current working directory, which is the destination where the files will be copied.
+This command will copy all files in the input_file directory to your current directory. If you need a specific file, replace the wildcard (`*`) with the exact filename.
+  
 ## Submitting the Job
 To submit a job for execution on the HPC cluster, use the sbatch command followed by the script name. In this example, the script is called Yasara_MD.sh, which contains the necessary instructions for running the molecular dynamics simulation.
 
