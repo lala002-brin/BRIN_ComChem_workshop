@@ -1,14 +1,17 @@
 #### Ensure a Terminal for SSH Connection is Available:
-  a.	Windows: PowerShell
+  a.	Windows: PowerShell (available by default on most versions).
   
   b.	Linux: Usually pre-installed by default
   
   c.	Mac: Usually pre-installed by default
 
-#### List of software
-1. YASARA Structure Installation:
-YASARA Structure (https://www.yasara.org/products.htm) will be installed directly by the organizing team. As YASARA requires a license, the installation will be managed to ensure proper licensing for all participants.
+#### Required Software:
+YASARA Structure:
 
-2. DSV:
-DSV is software for molecular modeling and analysis. Ensure you have it installed or access to it if needed for the project https://discover.3ds.com/discovery-studio-visualizer-download
+YASARA is a powerful tool for molecular modeling and simulation. The installation will be handled by the organizing team to ensure proper licensing. You don’t need to install it yourself.
+For more information, visit YASARA Structure (https://www.yasara.org/products.htm).
 
+Discovery Studio Visualizer (DSV):
+
+DSV is software for molecular modeling and analysis. Please make sure you have it installed or have access to it if needed for your project.
+Download it here: Discovery Studio Visualizer Download (https://discover.3ds.com/discovery-studio-visualizer-download).
