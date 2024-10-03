@@ -17,8 +17,6 @@ Steps:
     - If the key file is saved in the `Downloads` directory on Linux/MacOS, the path might look like `/home/your-username/Downloads/id_ws000i`.
     - On Windows, it might be something like `C:\Users\your-username\Downloads\id_ws000i`.
       
-3. Adding Your Private Key to SSH Agent
-   To avoid entering the path to your private key each time, you can use the `ssh-add` command to add the key to the SSH agent. This will allow the agent to handle authentication for future SSH sessions.
    
 5. Connect to the HPC: Run the `SSH` command with the correct path to your private key:
    
@@ -26,13 +24,13 @@ Steps:
     ssh wsbrinapctp0i@login2.hpc.brin.go.id -i /full/path/to/id_ws000i
     ``` 
     Example
-    If the `id_ws000i` file is stored in `/home/username/Downloads/id_ws000i` on a Linux/MacOS system, the command will look like:
+    If the `id_ws000i` file is stored in `/home/username/Downloads/keybrinapctp0i` on a Linux/MacOS system, the command will look like:
     ```
-    ssh wsbrinapctp0i@login2.hpc.brin.go.id -i /home/username/Downloads/id_ws000i
+    ssh wsbrinapctp0i@login2.hpc.brin.go.id -i /home/username/Downloads/keybrinapctp0i
     ```
-    For a Windows system, if the file is in `C:\Users\username\Downloads\id_ws000i`, the command will be:
+    For a Windows system, if the file is in `C:\Users\username\Downloads\keybrinapctp0i`, the command will be:
     ```
-    ssh wsbrinapctp0i@login2.hpc.brin.go.id -i C:\Users\username\Downloads\id_ws000i
+    ssh wsbrinapctp0i@login2.hpc.brin.go.id -i C:\Users\username\Downloads\keybrinapctp0i
     ```
 
 6. Authenticate:
