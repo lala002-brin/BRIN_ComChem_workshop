@@ -37,7 +37,7 @@ Steps:
     Example
     If the `id_ws000i` file is stored in `/home/username/Downloads/keybrinapctp0i` on a Linux/MacOS system, the command will look like:
     ```
-    ssh wsbrinapctp0i@login2.hpc.brin.go.id -i /home/username/Downloads/keybrinapctp0i
+    ssh -i ~/Dowloads/keybrinapctp03 wsbrinapctp03@login2.hpc.brin.go.id
     ```
     For a Windows system, if the file is in `C:\Users\username\Downloads\keybrinapctp0i`, the command will be:
     ```
