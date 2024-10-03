@@ -1,4 +1,4 @@
-#### 1.	Ensure a Terminal for SSH Connection is Available:
+#### Ensure a Terminal for SSH Connection is Available:
   a.	Windows: PowerShell
   
   b.	Linux: Usually pre-installed by default
