@@ -109,8 +109,8 @@ or, alternatively:
     - `r`: This option tells scp to copy the entire directory and its contents recursively.
     - `p`: This option preserves the file modification times, access times, and modes from the original files.
     - `i ~/Downloads/keybrinapctp0i`: This specifies the SSH private key to authenticate with the remote server (HPC).
-    workshop_yasara: This is the name of the local directory you want to upload to the HPC.
-    wsbrinapctp0i@login2.hpc.brin.go.id: This is the username and login address for the remote HPC server.
+    - `workshop_yasara` : This is the name of the local directory you want to upload to the HPC.
+    - `wsbrinapctp0i@login2.hpc.brin.go.id`: This is the username and login address for the remote HPC server.
     - `/mgpfs/home/wsbrinapctp0i/`: This is the destination path on the HPC where the directory will be copied. Make sure you adjust this path to        where you want the folder to be located.
    
     Back on the terminal connected to the HPC, verify that the files have been uploaded successfully by listing the contents of the current         directory, type:
