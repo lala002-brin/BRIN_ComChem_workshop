@@ -55,7 +55,7 @@ Steps:
 
     After completing these steps, you should be successfully connected to the `trembesi02` login node of the HPC BRIN system.
 
-![Screenshot 2024-09-02 at xx](LoginHPC.jpeg)
+![Screenshot 2024-09-02 at xx](https://github.com/lala002-brin/BRIN_ComChem_workshop/blob/main/attachment/LoginHPC.jpeg)
 
 
 ## Creating a New Working Directory
@@ -222,7 +222,7 @@ ls
 
 You should see a list of files:
 
-![Screenshot 2024-09-02 at xx](analysis.png)
+![Screenshot 2024-09-02 at xx](https://github.com/lala002-brin/BRIN_ComChem_workshop/blob/main/attachment/analysis.png)
 
 
 ## Closing the Terminal
