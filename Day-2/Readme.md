@@ -24,13 +24,13 @@ Steps:
     
       `C:\Users\your-username\Downloads\keybrinapctp0i`.
 
-**For Linux/Mac users**: 
-To ensure your private key has the correct permissions, you need to change its permission level to `600` to restrict access. This can be done with the `chmod` command, which allows only the owner to read and write the key file.
+    **For Linux/Mac users**: 
+    To ensure your private key has the correct permissions, you need to change its permission level to `600` to restrict access. This can be        done with the `chmod` command, which allows only the owner to read and write the key file.
 
-   Use the following command:
-   ```
-   chmod 600 ~/Downloads/keybrinapctp03
-   ```
+       Use the following command:
+       ```
+       chmod 600 ~/Downloads/keybrinapctp03
+       ```
    
 5. Connect to the HPC: Run the `SSH` command with the correct path to your private key:
    
