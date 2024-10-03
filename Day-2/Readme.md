@@ -29,7 +29,7 @@ To ensure your private key has the correct permissions, you need to change its p
 
    Use the following command:
    ```
-   chmod 600 ~/keybrinapctp0i
+   chmod 600 ~/Downloads/keybrinapctp03
    ```
    
 5. Connect to the HPC: Run the `SSH` command with the correct path to your private key:
