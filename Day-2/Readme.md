@@ -111,7 +111,7 @@ or, alternatively:
     ```
     You should see a list of your uploaded files.
 
-    ![Screenshot 2024-09-02 at xx](YASARA.jpg)
+    ![Screenshot 2024-09-02 at xx](https://github.com/lala002-brin/BRIN_ComChem_workshop/blob/main/attachment/YASARA.jpg)
 
 
 ## Submitting the Job
