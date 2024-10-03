@@ -35,7 +35,7 @@ Steps:
     ssh wsbrinapctp0i@login2.hpc.brin.go.id -i /full/path/to/keybrinapctp0i
     ``` 
     Example
-    If the `id_ws000i` file is stored in `/home/username/Downloads/keybrinapctp0i` on a Linux/MacOS system, the command will look like:
+    If the `keybrinapctp0i` file is stored in `/home/username/Downloads/keybrinapctp0i` on a Linux/MacOS system, the command will look like:
     ```
     ssh -i ~/Dowloads/keybrinapctp03 wsbrinapctp03@login2.hpc.brin.go.id
     ```
@@ -46,7 +46,7 @@ Steps:
 
 6. Authenticate:
     If this is your first time connecting to `login2.hpc.brin.go.id`, you'll be asked to confirm the host identity. Type `yes` to continue.
-    If your private key (`id_ws000i`) is encrypted, you'll be prompted to enter the passphrase associated with the key.
+    If your private key (`keybrinapctp0i`) is encrypted, you'll be prompted to enter the passphrase associated with the key.
     type:
 
     `brinapctp` as the passphrase.
@@ -87,12 +87,12 @@ To upload files from your laptop to the HPC system, use SCP (Secure Copy Protoco
 
 1. **Send a File**: To send files from your laptop to the remote directory using SCP, type the following command (in your laptop):
     ```
-    scp -i ~/Downloads/id_ws000i file_input wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/workshop_yasara/
+    scp -i ~/Downloads/keybrinapctp0i file_input wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/workshop_yasara/
 
     ```
     Here:
 
-    - `~/Downloads/id_ws000i` is the location of your private key file in the Downloads directory.
+    - `~/Downloads/keybrinapctp0i` is the location of your private key file in the Downloads directory.
     - `wsbrinapctp0i` is your remote username.
     - `login2.hpc.brin.go.id` is the remote host.
     - `/home/wsbrinapctp0i/workshop_yasara/` is the destination folder on the remote server.
@@ -102,16 +102,16 @@ or, alternatively:
 2. **Upload a Folder**: if you want to copy a folder, make sure that the "workshop_yasara" directory exists on the HPC. If it hasn’t been created yet, you can create the directory while copying the folder using this command:
 
     ```
-    scp -rp workshop_yasara wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/
+    scp -rp -i ~/Downloads/keybrinapctp0i workshop_yasara wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/
     ```
 
-Back on the terminal connected to the HPC, verify that the files have been uploaded successfully by listing the contents of the current directory, type:
-```
-ls
-```
-You should see a list of your uploaded files.
+    Back on the terminal connected to the HPC, verify that the files have been uploaded successfully by listing the contents of the current         directory, type:
+    ```
+    ls
+    ```
+    You should see a list of your uploaded files.
 
-![Screenshot 2024-09-02 at xx](YASARA.jpg)
+    ![Screenshot 2024-09-02 at xx](YASARA.jpg)
 
 
 ## Submitting the Job
@@ -122,9 +122,9 @@ To submit a job for execution on the HPC cluster, use the sbatch command followe
 #!/bin/bash
 
 #SBATCH --nodes=1              # Request 1 node
-#SBATCH --ntasks=4             # Request 4 CPU cores
-#SBATCH --mem=16GB             # Request 16 GB of memory
-#SBATCH --partition=medium-large  # Specify the partition to use
+#SBATCH --ntasks=8             # Request 8 CPU cores
+#SBATCH --mem=32GB             # Request 32 GB of memory
+#SBATCH --partition=workshop  # Specify the partition to use
 
 #SBATCH --output=md_analyze.out  # Save standard output to md_analyze.out
 #SBATCH --error=md_analyze.err   # Save error messages to md_analyze.err
@@ -137,8 +137,8 @@ yasara -txt ${FILE_INPUT}  # Run Yasara using the specified input file
 Explanation of the Script:
 - `#!/bin/bash`: This line specifies the script will be executed in a Bash shell.
 - `#SBATCH --nodes=1`: Allocates 1 compute node for the job.
-- `#SBATCH --ntasks=4`: Requests 4 tasks (or CPU cores) for parallel execution.
-- `#SBATCH --mem=16GB`: Allocates 16 GB of memory to the job.
+- `#SBATCH --ntasks=8`: Requests 8 tasks (or CPU cores) for parallel execution.
+- `#SBATCH --mem=32GB`: Allocates 32 GB of memory to the job.
 - `#SBATCH --partition=medium-large`: Specifies the partition (queue) to submit the job to, in this case, a medium-large queue suitable for moderately resource-intensive tasks.
 - `#SBATCH --output=md_analyze.out`: Redirects the standard output to the md_analyze.out file.
 - `#SBATCH --error=md_analyze.err`: Redirects error messages to the md_analyze.err file for debugging.
@@ -196,9 +196,9 @@ After the simulation is completed, you can analyze the molecular dynamics result
 #!/bin/bash
 
 #SBATCH --nodes=1               # Request 1 node
-#SBATCH --ntasks=4              # Request 4 CPU cores
-#SBATCH --mem=8GB               # Request 8 GB of memory
-#SBATCH --partition=medium       # Use a medium partition for analysis
+#SBATCH --ntasks=8              # Request 8 CPU cores
+#SBATCH --mem=32GB               # Request 32 GB of memory
+#SBATCH --partition=workshop      # Use a medium partition for analysis
 
 #SBATCH --output=analysis.out    # Save standard output to analysis.out
 #SBATCH --error=analysis.err     # Save error messages to analysis.err
