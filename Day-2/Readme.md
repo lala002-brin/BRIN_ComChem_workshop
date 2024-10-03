@@ -14,7 +14,10 @@ Steps:
 2. Locate Your Private Key:
    Find the directory where you saved your private key file (`keybrinapctp0i`). For example:
 
-    - If the key file is saved in the `Downloads` directory on Linux/MacOS, the path might look like `/home/your-username/Downloads/id_ws000i`.
+    - If the key file is saved in the `Downloads` directory on Linux/MacOS, the path might look like
+    
+    `/home/your-username/Downloads/id_ws000i`.
+   
     - On Windows, it might be something like `C:\Users\your-username\Downloads\id_ws000i`.
       
    
