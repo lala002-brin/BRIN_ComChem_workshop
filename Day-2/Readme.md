@@ -8,7 +8,7 @@ Welcome to the HPC Summer School! This guide will walk you through the process o
 Simply click the top-right corner of each code snippet to copy the commands and paste them directly into your terminal.
 
 ## Login to MAHAMERU
-To start, ensure you have your private key file (`id_ws000i`) handy. This file is essential for authenticating your login to the HPC system.
+To start, ensure you have your private key file (`keybrinapctp0i`) handy. This file is essential for authenticating your login to the HPC system.
 
 Steps:
 1. Open Terminal:
@@ -16,12 +16,16 @@ Steps:
     - Windows: Open PowerShell by typing "PowerShell" in the Start Menu.
       
 2. Locate Your Private Key:
-   Find the directory where you saved your private key file (`id_ws000i`). For example:
+   Find the directory where you saved your private key file (`keybrinapctp0i`). For example:
 
     - If the key file is saved in the `Downloads` directory on Linux/MacOS, the path might look like `/home/your-username/Downloads/id_ws000i`.
     - On Windows, it might be something like `C:\Users\your-username\Downloads\id_ws000i`.
       
-3. Connect to the HPC: Run the `SSH` command with the correct path to your private key:
+3. Adding Your Private Key to SSH Agent
+   To avoid entering the path to your private key each time, you can use the `ssh-add` command to add the key to the SSH agent. This will allow the agent to handle authentication for future SSH sessions.
+   
+5. Connect to the HPC: Run the `SSH` command with the correct path to your private key:
+   
     ```
     ssh wsbrinapctp0i@login2.hpc.brin.go.id -i /full/path/to/id_ws000i
     ``` 
@@ -35,7 +39,7 @@ Steps:
     ssh wsbrinapctp0i@login2.hpc.brin.go.id -i C:\Users\username\Downloads\id_ws000i
     ```
 
-4. Authenticate:
+6. Authenticate:
     If this is your first time connecting to `login2.hpc.brin.go.id`, you'll be asked to confirm the host identity. Type `yes` to continue.
     If your private key (`id_ws000i`) is encrypted, you'll be prompted to enter the passphrase associated with the key.
     type:
