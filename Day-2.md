@@ -78,7 +78,7 @@ To upload files from your laptop to the HPC system, use SCP (Secure Copy Protoco
 
 1. **Send a File**: To send files from your laptop to the remote directory using SCP, type the following command (in your laptop):
     ```
-    scp ~/Downloads/id_ws000i wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/workshop_yasara/
+    scp -i ~/Downloads/id_ws000i file_input wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/workshop_yasara/
 
     ```
     Here:
