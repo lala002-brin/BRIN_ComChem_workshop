@@ -133,7 +133,7 @@ cp /mgpfs/home/wsbrinapctp0i/BRIN_ComChem_workshop/Day-2/input_file/* .
 Explanation:
 - `cp`: This is the command used to copy files.
 - `/mgpfs/home/wsbrinapctp0i/BRIN_ComChem_workshop/Day-2/input_file/`: This is the source directory where the required files are located.
-- `*` : This wildcard symbol is used to select all files within the input_file directory. If you only need a specific file, replace * with the filename (e.g., input_file_name).
+- `*` : This wildcard symbol is used to select all files within the input_file directory. If you only need a specific file, replace `*` with the filename (e.g., `input_file_name`).
 - `.`: This refers to the current working directory, which is the destination where the files will be copied.
 This command will copy all files in the input_file directory to your current directory. If you need a specific file, replace the wildcard (`*`) with the exact filename.
   
