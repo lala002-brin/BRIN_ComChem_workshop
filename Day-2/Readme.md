@@ -2,7 +2,10 @@
 
 # HPC Summer School 2024: Foundation in Computational Biomolecular and Biosystem Research
 
-
+## Molecular Docking
+...
+## Molecular Dynamics
+... (carried out in HPC partially)
 ## Login to MAHAMERU
 To start, ensure you have your private key file (`keybrinapctp0i`) handy. This file is essential for authenticating your login to the HPC system.
 
