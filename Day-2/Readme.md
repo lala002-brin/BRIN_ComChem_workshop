@@ -3,7 +3,7 @@
 # HPC Summer School 2024: Foundation in Computational Biomolecular and Biosystem Research
 
 ## Molecular Docking
-please see the attached file ([https://github.com/lala002-brin/BRIN_ComChem_workshop/blob/main/Day-2/materials/TUTORIAL%20YASARA%20(IND).pdf](https://drive.google.com/drive/folders/1NAcDQgRyP71ZuVbPp9I5k2bqjLWaurSE))
+please see the attached file (https://drive.google.com/drive/folders/1NAcDQgRyP71ZuVbPp9I5k2bqjLWaurSE))
 ## Molecular Dynamics
 ### Login to MAHAMERU
 To start, ensure you have your private key file (`keybrinapctp0i`) handy. This file is essential for authenticating your login to the HPC system.
