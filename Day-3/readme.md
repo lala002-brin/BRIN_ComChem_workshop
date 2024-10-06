@@ -3,12 +3,13 @@
 # HPC Summer School 2024: Foundation in Computational Biomolecular and Biosystem Research
 
 ### Required Software:
-- Avogadro
-- Multiwfn
-- Orca
-- Gabedit
+- Avogadro: Avogadro adalah alat penting untuk pengeditan dan visualisasi molekul. Pastikan sudah terinstal untuk proyek Anda. Unduh di sini: [Avogadro Download.](https://sourceforge.net/projects/avogadro/files/latest/download).
 
-  #will be updated soon...
+- Multiwfn: Multiwfn adalah alat analisis fungsi gelombang yang sangat berguna dalam kimia komputasi. Pastikan untuk menginstalnya sebelum mulai. Anda bisa mengunduhnya di sini: [Multiwfn Download ](https://sobereva.com/multiwfn/).
+
+- Orca: Orca sudah terinstal di HPC, jadi tidak perlu mengunduhnya sendiri. Pastikan akses ke HPC siap untuk digunakan.
+
+- Gabedit: Gabedit adalah antarmuka grafis penting untuk alat kimia komputasi. Pastikan sudah terinstal. Anda bisa mendapatkannya di sini: [Gabedit Download](https://gabedit.sourceforge.net/).
 
 # Tutorial Perhitungan Muatan ESP Menggunakan Orca dan Multiwfn
 
