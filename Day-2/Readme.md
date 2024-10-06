@@ -5,8 +5,7 @@
 ## Molecular Docking
 please see the attached file ([https://github.com/lala002-brin/BRIN_ComChem_workshop/blob/main/Day-2/materials/TUTORIAL%20YASARA%20(IND).pdf](https://drive.google.com/drive/folders/1NAcDQgRyP71ZuVbPp9I5k2bqjLWaurSE))
 ## Molecular Dynamics
-... (carried out in HPC partially)
-## Login to MAHAMERU
+### Login to MAHAMERU
 To start, ensure you have your private key file (`keybrinapctp0i`) handy. This file is essential for authenticating your login to the HPC system.
 
 Steps:
@@ -61,7 +60,7 @@ Steps:
 ![Screenshot 2024-09-02 at xx](https://github.com/lala002-brin/BRIN_ComChem_workshop/blob/main/attachment/LoginHPC.jpeg)
 
 
-## Creating a New Working Directory
+### Creating a New Working Directory
 Now, let's create a dedicated directory for your workshop files to stay organized:
 1. **Create the Directory**: To keep your files organized, create a directory named `workshop_yasara` under your home directory by typing the following command:
      ```
@@ -85,7 +84,7 @@ Now, let's create a dedicated directory for your workshop files to stay organize
 
  Now, you're ready to start working within your new workshop_yasara folder.
  
-## Sending Files to the HPC
+### Sending Files to the HPC
 To upload files from your laptop to the HPC system, use SCP (Secure Copy Protocol). This example shows how to upload your private key file:
 
 1. **Send a File**: To send files from your laptop to the remote directory using SCP, type the following command (in your laptop):
@@ -140,7 +139,7 @@ Explanation:
 - `.`: This refers to the current working directory, which is the destination where the files will be copied.
 This command will copy all files in the input_file directory to your current directory. If you need a specific file, replace the wildcard (`*`) with the exact filename.
   
-## Submitting the Job
+### Submitting the Job
 To submit a job for execution on the HPC cluster, use the sbatch command followed by the script name. In this example, the script is called Yasara_MD.sh, which contains the necessary instructions for running the molecular dynamics simulation.
 
 #### Yasara_MD.sh Script Contents
@@ -183,7 +182,7 @@ sbatch Yasara_MD.sh
 - This process ensures that your molecular dynamics simulation runs efficiently on the HPC cluster.
 
 
-## Checking Job Status
+### Checking Job Status
 After submitting your job, you can monitor its progress using the `squeue` command. This command allows you to view the status of jobs currently in the queue.
 ```
 squeue -u wsbrinapctp0i
@@ -194,7 +193,7 @@ Explanation:
 - `-u` specifies the user, and 
 - `wsbrinapctp0i` automatically fetches your username, so it shows the jobs associated with your account.
 
-## Interpreting the Job Status
+### Interpreting the Job Status
 Once you run the squeue command, you'll see a list of jobs along with their details. The important column to note is the "ST" column, which represents the status of your job. 
 Here are common job statuses:
 - `R`: The job is Running.
@@ -203,7 +202,7 @@ Here are common job statuses:
 
 If everything is working correctly, the status (`ST`) should display as `R`, indicating that your job is actively running on the cluster.
 
-## Monitoring Output in Real-Time
+### Monitoring Output in Real-Time
 To check the real-time progress of your job, you can use the `tail -f` command to monitor your output file. For example, if your job is running a molecular dynamics simulation and writing output to a file called `md_runmembrane.out`, you can view the live updates with this command:
 ```
 tail -f md_runmembrane.out
@@ -214,7 +213,7 @@ Explanation:
 
 This allows you to track the progress of your job without waiting for it to finish.
 
-## Analysing MD results
+### Analysing MD results
 After the simulation is completed, you can analyze the molecular dynamics results. To do so, use the `Yasara_analysis.sh` script, which is specifically designed to process and analyze the output from your simulation.
 
 #### Yasara_analysis.sh Script Contents
@@ -251,7 +250,7 @@ You should see a list of files:
 ![Screenshot 2024-09-02 at xx](https://github.com/lala002-brin/BRIN_ComChem_workshop/blob/main/attachment/analysis.png)
 
 
-## Closing the Terminal
+### Closing the Terminal
 Even though the job may take some time to complete, you can safely close the terminal. The job will continue running in the background on the HPC system until it's finished. You can always reconnect later and check the status using the `squeue` command again.
 
 By using `sbatch`, the job is handled by the scheduler independently of your terminal session, so there's no need to keep the terminal open while the job runs.
