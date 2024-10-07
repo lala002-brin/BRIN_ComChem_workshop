@@ -104,12 +104,14 @@ Now, let's create a dedicated directory for your workshop files to stay organize
 To upload files from your laptop to the HPC system, use SCP (Secure Copy Protocol). This example shows how to upload your private key file:
 
 1. **Send a File**: To send files from your laptop to the remote directory using SCP, type the following command (in your laptop):
-    ```
-    scp -i ~/Downloads/keybrinapctp0i file_input wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/workshop_yasara/ ##for linux
+   For linux
+   ```
+    scp -i ~/Downloads/keybrinapctp0i file_input wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/workshop_yasara/
 
     ```
-     ```
-    scp -i C:\Users\username\Downloads\keybrinapctp0i file_input wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/workshop_yasara/ ##for windows
+    For windows:
+    ```
+    scp -i C:\Users\username\Downloads\keybrinapctp0i file_input wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/workshop_yasara/ 
 
     ```
     Here:
