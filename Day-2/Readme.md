@@ -55,7 +55,7 @@ Steps:
     Example
     If the `keybrinapctp0i` file is stored in `/home/username/Downloads/keybrinapctp0i` on a Linux/MacOS system, the command will look like:
     ```
-    ssh -i ~/Dowloads/keybrinapctp03 wsbrinapctp03@login2.hpc.brin.go.id
+    ssh -i ~/Downloads/keybrinapctp03 wsbrinapctp03@login2.hpc.brin.go.id
     ```
     For a Windows system, if the file is in `C:\Users\username\Downloads\keybrinapctp0i`, the command will be:
     ```
@@ -105,7 +105,7 @@ To upload files from your laptop to the HPC system, use SCP (Secure Copy Protoco
 
 1. **Send a File**: To send files from your laptop to the remote directory using SCP, type the following command (in your laptop):
 
-    For linux
+    For linux:
    ```
     scp -i ~/Downloads/keybrinapctp0i file_input wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/workshop_yasara/
 
@@ -127,10 +127,17 @@ or, alternatively:
     
 2. **Upload a Folder**: if you want to copy a folder, make sure that the "workshop_yasara" directory exists on the HPC. If it hasn’t been created yet, you can create the directory while copying the folder using this command:
 
-    ```
+    For Linux:
+   ```
     scp -rp -i ~/Downloads/keybrinapctp0i workshop_yasara wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/
     ```
-    Explanation:
+   
+    For Windows:
+   ```
+    scp -rp -i C:\Users\username\Downloads\keybrinapctp0i workshop_yasara wsbrinapctp0i@login2.hpc.brin.go.id:/mgpfs/home/wsbrinapctp0i/
+    ```
+
+   Explanation:
     - `scp`: This is a secure copy command used to transfer files between your local machine and a remote server (HPC).
     - `r`: This option tells scp to copy the entire directory and its contents recursively.
     - `p`: This option preserves the file modification times, access times, and modes from the original files.
