@@ -5,7 +5,7 @@
 ### Software:
 - Avogadro: Avogadro adalah alat penting untuk pengeditan dan visualisasi molekul. Pastikan sudah terinstal di laptop. Unduh di sini: [Avogadro Download.](https://sourceforge.net/projects/avogadro/files/latest/download).
 
-- Multiwfn: Multiwfn adalah alat analisis fungsi gelombang yang sangat berguna dalam kimia komputasi. Pastikan untuk menginstalnya sebelum mulai. Unduh di sini: [Multiwfn Download ](https://drive.google.com/drive/folders/1N65AWDBRvWIPrqWztZKNEbuylwdOAg9M)).
+- Multiwfn: Multiwfn adalah alat analisis fungsi gelombang yang sangat berguna dalam kimia komputasi. Pastikan untuk menginstalnya sebelum mulai. Unduh di sini: [Multiwfn Download ](https://drive.google.com/drive/folders/1N65AWDBRvWIPrqWztZKNEbuylwdOAg9M).
 
 - Orca: Orca sudah terinstal di HPC, jadi tidak perlu mengunduhnya sendiri. Pastikan akses ke HPC siap untuk digunakan.
 
