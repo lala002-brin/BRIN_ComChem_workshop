@@ -4,4 +4,4 @@
 
 Welcome to the HPC Summer School! This guide will walk you through the process of analyzing molecular dynamics (MD) data using the MAHAMERU BRIN HPC system. The necessary software, such as Yasara structure and ORCA for quantum chemistry calculations, is pre-installed as modules. No additional environment setup is required. You’re ready to go!
 
-![Screenshot 2024-09-02 at xx](DAY_1.jpeg) 
+![Screenshot 2024-09-02 at xx](https://github.com/lala002-brin/BRIN_ComChem_workshop/blob/main/attachment/DAY_1.jpeg) 
