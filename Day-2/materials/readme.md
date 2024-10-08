@@ -12,4 +12,4 @@ For more information, visit YASARA Structure (https://www.yasara.org/products.ht
 
 - Discovery Studio Visualizer (DSV):
 DSV is software for molecular modeling and analysis. Please make sure you have it installed or have access to it if needed for your project.
-Download it here: Discovery Studio Visualizer Download (https://discover.3ds.com/discovery-studio-visualizer-download).
+Download it here: Discovery Studio Visualizer Download ([https://discover.3ds.com/discovery-studio-visualizer-download](https://drive.google.com/drive/folders/1cmlJ4EXUtfe4id-u0QhGA5VRAUrGr7Ae)).
