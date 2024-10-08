@@ -20,6 +20,7 @@ Download it here: Discovery Studio Visualizer Download (https://discover.3ds.com
 
 ## Molecular Docking
 please see the attached file (https://drive.google.com/drive/folders/1NAcDQgRyP71ZuVbPp9I5k2bqjLWaurSE))
+
 ## Molecular Dynamics
 ### Login to MAHAMERU
 To start, ensure you have your private key file (`keybrinapctp0i`) handy. This file is essential for authenticating your login to the HPC system.
@@ -125,7 +126,7 @@ To upload files from your laptop to the HPC system, use SCP (Secure Copy Protoco
 
 or, alternatively:
     
-2. **Upload a Folder**: if you want to copy a folder, make sure that the "workshop_yasara" directory exists on the HPC. If it hasn’t been created yet, you can create the directory while copying the folder using this command:
+2. **Upload a Folder**: if you want to copy a folder, make sure that the `workshop_yasara` directory exists on the HPC. If it hasn’t been created yet, you can create the directory while copying the folder using this command:
 
     For Linux:
    ```
@@ -171,7 +172,7 @@ Explanation:
 This command will copy all files in the input_file directory to your current directory. If you need a specific file, replace the wildcard (`*`) with the exact filename.
   
 ### Submitting the Job
-To submit a job for execution on the HPC cluster, use the sbatch command followed by the script name. In this example, the script is called Yasara_MD.sh, which contains the necessary instructions for running the molecular dynamics simulation.
+To submit a job for execution on the HPC cluster, use the sbatch command followed by the script name. In this example, the script is called `Yasara_MD.sh`, which contains the necessary instructions for running the molecular dynamics simulation.
 
 #### Yasara_MD.sh Script Contents
 ```
