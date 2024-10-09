@@ -11,7 +11,7 @@ RequireVersion 20.1.1
 # MD report initialization parameters and flags
 # =============================================
 
-Processors CPUThreads=24,GPU=0
+Processors CPUThreads=8,GPU=0
 Antialias 0
 Console Off
 
@@ -22,7 +22,7 @@ Console Off
 # by providing it as command line argument (see docs at Essentials > The command line),
 # or by uncommenting the line below (=remove the '#') and specifying it directly.
 #MacroTarget 'c:\MyProject\1crn'
-MacroTarget /home/curie/MyData/agus_ananto/BRIN/MD/4hjo_001.pdb,Remove=Extension
+MacroTarget /mgpfs/home/wsbrinapctp03/workshop_yasara/4hjo_001.pdb,Remove=Extension
 
 # Set common beginning for all result filenames. By default,
 # this is the same as the macro target, but you can change
