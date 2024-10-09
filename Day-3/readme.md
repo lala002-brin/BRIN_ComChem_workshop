@@ -12,7 +12,7 @@
 
 - Gabedit: Gabedit adalah antarmuka grafis penting untuk alat kimia komputasi. Selain memudahkan dalam menyiapkan file input dan menjalankan perhitungan, Gabedit dapat digunakan untuk memvisualisasikan hasil seperti spektrum dan optimasi geometri yang diperoleh dari ORCA. Unduh di sini: [Gabedit Download](https://gabedit.sourceforge.net/).
 
-- Molden: Molden adalah perangkat lunak untuk visualisasi hasil perhitungan kimia komputasi, termasuk orbital molekul, kepadatan elektron, dan spektrum vibrasi. Molden sangat berguna untuk memvisualisasikan hasil perhitungan frekuensi vibrasi dan optimasi geometri dari ORCA.
+- Molden: Molden adalah perangkat lunak untuk visualisasi hasil perhitungan kimia komputasi, termasuk orbital molekul, kepadatan elektron, dan spektrum vibrasi. Molden sangat berguna untuk memvisualisasikan hasil perhitungan frekuensi vibrasi dan optimasi geometri dari ORCA. Unduh di sini: [Molden](https://www.theochem.ru.nl/molden)
   
 - ORCA: ORCA adalah perangkat lunak kimia komputasi yang kuat, khususnya untuk metode kuantum seperti DFT, MP2, dan CCSD. ORCA digunakan untuk menghitung berbagai sifat molekul, seperti energi elektronik, optimasi geometri, spektrum IR dan UV-Vis, serta sifat-sifat terkait reaksi kimia dan interaksi molekul. ORCA sudah terinstal di HPC, jadi tidak perlu mengunduhnya sendiri. Pastikan akses ke HPC siap untuk digunakan.
 
