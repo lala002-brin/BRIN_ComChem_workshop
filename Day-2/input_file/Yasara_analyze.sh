@@ -2,7 +2,7 @@
 
 #SBATCH --nodes=1
 #SBATCH --ntasks=8
-#SBATCH --mem=32GB
+#SBATCH --mem=16GB
 #SBATCH --partition=workshop
 
 #SBATCH --output=md_analyze.out
@@ -11,4 +11,4 @@
 
 FILE_INPUT=md_analyze.mcr
 
-yasara -txt ${FILE_INPUT}
+/mgpfs/apps/sample/apps/ys/yasara -txt ${FILE_INPUT}
