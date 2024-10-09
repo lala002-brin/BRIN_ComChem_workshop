@@ -13,7 +13,7 @@ include md_library
 # effect if you start an entirely new simulation, not if you continue an existing one. 
 # ====================================================================================
 
-Processors CPUThreads=24,GPU=0
+Processors CPUThreads=8,GPU=0
 Antialias 0
 Console Off
 
@@ -23,7 +23,7 @@ Console Off
 # by providing it as command line argument (see docs at Essentials > The command line),
 # or by uncommenting the line below and specifying it directly.
 #MacroTarget 'c:\MyProject\1crn'
-MacroTarget '/home/curie/MyData/agus_ananto/BRIN/MD/4hjo_001.pdb'
+MacroTarget '/mgpfs/home/wsbrinapctp03/workshop_yasara/4hjo_001.pdb'
 
 # Extension of the cell on each side of the protein in the membrane plane (=XZ plane)
 # '15' means that the membrane will be 30 A larger than the protein
