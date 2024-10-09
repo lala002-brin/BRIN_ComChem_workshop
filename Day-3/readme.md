@@ -2,16 +2,19 @@
 
 # HPC Summer School 2024: Foundation in Computational Biomolecular and Biosystem Research
 
-### Software:
-- Avogadro: Avogadro adalah alat penting untuk pengeditan dan visualisasi molekul. Pastikan sudah terinstal di laptop. Unduh di sini: [Avogadro Download.](https://sourceforge.net/projects/avogadro/files/latest/download).
+## Perangkat Lunak atau Aplikasi yang Digunakan:
 
-- Multiwfn: Multiwfn adalah alat analisis fungsi gelombang yang sangat berguna dalam kimia komputasi. Pastikan untuk menginstalnya sebelum mulai. Unduh di sini: [Multiwfn Download ](https://drive.google.com/drive/folders/1N65AWDBRvWIPrqWztZKNEbuylwdOAg9M).
+- Avogadro: Avogadro adalah alat penting untuk pengeditan dan visualisasi molekul. Selain membangun struktur molekul, Avogadro memungkinkan pengguna menyiapkan file input untuk berbagai perangkat lunak kimia komputasi, termasuk ORCA, dan memvisualisasikan hasil perhitungan. Unduh di sini: [Avogadro Download.](https://sourceforge.net/projects/avogadro/files/latest/download).
+  
+- PyMol: PyMol adalah alat visualisasi molekul yang sangat populer, terutama untuk sistem biomolekul seperti protein dan nukleotida. PyMol dapat digunakan untuk melihat interaksi antara ligan dan protein setelah simulasi molekuler, seperti yang dihitung oleh ORCA, dengan fokus pada representasi 3D dan analisis visual interaksi struktural. Unduh di sini: [Web PyMol](https://www.pymol.org)
 
-- Orca: Orca sudah terinstal di HPC, jadi tidak perlu mengunduhnya sendiri. Pastikan akses ke HPC siap untuk digunakan.
+- Multiwfn: Multiwfn adalah alat analisis fungsi gelombang yang sangat berguna dalam kimia komputasi. Aplikasi ini mendukung analisis mendalam dari berbagai sifat molekul, seperti distribusi elektron, fungsi gelombang, dan berbagai analisis kuantum lainnya yang dihasilkan dari perhitungan DFT atau ab-initio. Unduh di sini: [Multiwfn Download ](https://drive.google.com/drive/folders/1N65AWDBRvWIPrqWztZKNEbuylwdOAg9M).
 
-- Gabedit: Gabedit adalah antarmuka grafis penting untuk alat kimia komputasi. Pastikan sudah terinstal. Unduh di sini: [Gabedit Download](https://gabedit.sourceforge.net/).
+- Gabedit: Gabedit adalah antarmuka grafis penting untuk alat kimia komputasi. Selain memudahkan dalam menyiapkan file input dan menjalankan perhitungan, Gabedit dapat digunakan untuk memvisualisasikan hasil seperti spektrum dan optimasi geometri yang diperoleh dari ORCA. Unduh di sini: [Gabedit Download](https://gabedit.sourceforge.net/).
 
-- PyMol: Unduh di [PyMol](https://www.pymol.org)
+- Molden: Molden adalah perangkat lunak untuk visualisasi hasil perhitungan kimia komputasi, termasuk orbital molekul, kepadatan elektron, dan spektrum vibrasi. Molden sangat berguna untuk memvisualisasikan hasil perhitungan frekuensi vibrasi dan optimasi geometri dari ORCA.
+  
+- ORCA: ORCA adalah perangkat lunak kimia komputasi yang kuat, khususnya untuk metode kuantum seperti DFT, MP2, dan CCSD. ORCA digunakan untuk menghitung berbagai sifat molekul, seperti energi elektronik, optimasi geometri, spektrum IR dan UV-Vis, serta sifat-sifat terkait reaksi kimia dan interaksi molekul. ORCA sudah terinstal di HPC, jadi tidak perlu mengunduhnya sendiri. Pastikan akses ke HPC siap untuk digunakan.
 
 # Tutorial ORCA
 Perbedaan tiap percobaan terletak pada penggunaan *input file* yang berbeda. Secara keseluruhan tahapan yang dilakukan berulang.
