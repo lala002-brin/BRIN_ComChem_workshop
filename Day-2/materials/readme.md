@@ -1,3 +1,5 @@
+materi PPT: https://drive.google.com/drive/folders/18z3gsgi1JLI7RehXvQa5qnDiSRPC0nPd
+
 #### Ensure a Terminal for SSH Connection is Available:
   a.	Windows: PowerShell (available by default on most versions).
   
