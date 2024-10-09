@@ -1,10 +1,10 @@
 #!/bin/bash
   
 #SBATCH --job-name=Quantum-Chemistry-Calculation
-#SBATCH --partition=short #diganti
+#SBATCH --partition=workshop
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --cpus-per-task=4
+#SBATCH --cpus-per-task=8
 #SBATCH --error=error.txt
 
 
