@@ -11,7 +11,7 @@
 
 - Gabedit: Gabedit adalah antarmuka grafis penting untuk alat kimia komputasi. Pastikan sudah terinstal. Unduh di sini: [Gabedit Download](https://gabedit.sourceforge.net/).
 
-- PyMol: Unduh di [PyMol] (https://www.pymol.org)
+- PyMol: Unduh di [PyMol](https://www.pymol.org)
 
 # Tutorial ORCA
 Perbedaan tiap percobaan terletak pada penggunaan *input file* yang berbeda. Secara keseluruhan tahapan yang dilakukan berulang.
