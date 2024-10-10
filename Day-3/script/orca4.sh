@@ -6,14 +6,11 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=8
 #SBATCH --error=error.txt
-
+#SBATCH --mem=16GB
 
 ## Required Modules
 module load openmpi4/4.1.4
 module load nuclear/orca/4.3.2
-
-## To handle memory
-ulimit -l unlimited
 
 echo "start = date"
 
