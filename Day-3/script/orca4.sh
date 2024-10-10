@@ -10,9 +10,9 @@
 
 ## Required Modules
 module load openmpi4/4.1.4
-module load nuclear/orca/4.3.2
+module load nuclear/orca/4.2.1
 
 echo "start = date"
 
 # Put your job here
-/mgpfs/apps/nuclear/apps/orca/4.3.2/orca orca4.inp > hasil.out --oversubscribe
+/mgpfs/apps/nuclear/apps/orca/4.2.1/orca orca4.inp > hasil.out --oversubscribe
